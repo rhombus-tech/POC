@@ -1,0 +1,12 @@
+[package]
+name = "manager_rsa"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }    # Serialization/deserialization
+serde_json = "1.0"                                   # For JSON handling
+rand = "0.8"                                         # Randomness generation
+sha2 = "0.10"                                        # For hashing
+ed25519-dalek = "1.0"                                # Signature verification (Ed25519)
+hex = "0.4"                                          # Hex encoding/decoding
